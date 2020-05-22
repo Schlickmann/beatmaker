@@ -117,6 +117,28 @@ svg {
   background-color: #757575;
 }
 
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo-slider {
+  width: 100%;
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0;
+  position: relative;
+  background-color: #888888;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.tempo p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem;
+}
+
 select {
   padding: 1rem;
   font-size: 1rem;
