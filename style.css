@@ -2,14 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 0;
 }
 
 body {
   font-family: sans-serif;
 }
 
+h1 {
+  font-size: 3rem;
+  color: #343434;
+}
+
 h2 {
   font-size: 2.5rem;
+  color: #343434;
 }
 
 i,
@@ -23,6 +30,8 @@ svg {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 3rem 0;
+  background-color: #f5f5f5;
 }
 
 .pad {
@@ -67,7 +76,7 @@ svg {
   align-items: center;
   justify-content: space-between;
   width: 70%;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .kick,
@@ -86,9 +95,15 @@ svg {
   flex: 1;
   margin: 0 2rem;
 }
+.controls div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.controls button {
+.controls div button {
   padding: 1rem;
+  margin-right: 0.5rem;
   border: none;
   border-radius: 0.25rem;
   background-color: #343434;
@@ -99,6 +114,14 @@ svg {
   height: 3rem;
 }
 
+.controls-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-top: 3rem;
+}
+
 .play {
   padding: 1rem 2rem;
   font-size: 1.5rem;
@@ -106,7 +129,7 @@ svg {
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-top: 3rem;
+  border-radius: 0.5rem;
 }
 
 .active {
@@ -118,7 +141,7 @@ svg {
 }
 
 .tempo {
-  margin: 3rem;
+  margin: 0 3rem;
   width: 30%;
 }
 
@@ -136,7 +159,7 @@ svg {
 .tempo p {
   font-size: 1.5rem;
   text-align: center;
-  margin: 2rem;
+  margin: 0 2rem;
 }
 
 select {
