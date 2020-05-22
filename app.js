@@ -2,16 +2,17 @@ class DrumKit {
   constructor() {
     this.pads = document.querySelectorAll(".pad");
     this.playButton = document.querySelector(".play");
-    this.currentKick = "./sounds/kick-classic.wav";
-    this.currentSnare = "./sounds/snare-808.wav";
-    this.currentHihat = "./sounds/hihat-808.wav";
     this.kickAudio = document.querySelector(".kick-sound");
     this.snareAudio = document.querySelector(".snare-sound");
     this.hihatAudio = document.querySelector(".hihat-sound");
+    this.selects = document.querySelectorAll("select");
+    this.muteButtons = document.querySelectorAll(".mute");
     this.index = 0;
     this.bpm = 150; // bits per minute
     this.isPlaying = null;
-    this.selects = document.querySelectorAll("select");
+    this.currentKick = "./sounds/kick-classic.wav";
+    this.currentSnare = "./sounds/snare-808.wav";
+    this.currentHihat = "./sounds/hihat-808.wav";
   }
 
   activePad() {
@@ -88,6 +89,40 @@ class DrumKit {
         break;
     }
   }
+
+  muteSound(event) {
+    const button = event.target;
+    const muteIndex = button.getAttribute("data-track");
+
+    button.classList.toggle("active");
+
+    if (button.classList.contains("active")) {
+      // button.innerHTML = '<i class="fas fa-volume-up"></i>';
+      switch (muteIndex) {
+        case "0":
+          this.kickAudio.volume = 0;
+          break;
+        case "1":
+          this.snareAudio.volume = 0;
+          break;
+        case "2":
+          this.hihatAudio.volume = 0;
+          break;
+      }
+    } else {
+      switch (muteIndex) {
+        case "0":
+          this.kickAudio.volume = 1;
+          break;
+        case "1":
+          this.snareAudio.volume = 1;
+          break;
+        case "2":
+          this.hihatAudio.volume = 1;
+          break;
+      }
+    }
+  }
 }
 
 const drumKit = new DrumKit();
@@ -109,5 +144,11 @@ drumKit.playButton.addEventListener("click", () => {
 drumKit.selects.forEach((select) => {
   select.addEventListener("change", function (event) {
     drumKit.changeSound(event);
+  });
+});
+
+drumKit.muteButtons.forEach((btn) => {
+  btn.addEventListener("click", function (event) {
+    drumKit.muteSound(event);
   });
 });

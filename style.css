@@ -96,6 +96,7 @@ svg {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.5s ease;
+  height: 3rem;
 }
 
 .play {
@@ -112,9 +113,15 @@ svg {
   background-color: rgb(199, 37, 37);
 }
 
+.mute.active {
+  background-color: #757575;
+}
+
 select {
   padding: 1rem;
   font-size: 1rem;
+  width: 10rem;
+  height: 3rem;
 }
 
 @keyframes playTrack {
