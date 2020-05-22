@@ -90,9 +90,25 @@ svg {
 .controls button {
   padding: 1rem;
   border: none;
+  border-radius: 0.25rem;
   background-color: #343434;
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.5s ease;
+}
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #343434;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
 }
