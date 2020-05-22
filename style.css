@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background-color: rgb(147, 217, 247);
+}
+
+.snare-pad {
+  background-color: rgb(255, 212, 219);
+}
+
+.hihat-pad {
+  background-color: rgb(151, 243, 190);
+}
