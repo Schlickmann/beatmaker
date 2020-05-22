@@ -108,6 +108,10 @@ svg {
   margin-top: 3rem;
 }
 
+.active {
+  background-color: rgb(199, 37, 37);
+}
+
 select {
   padding: 1rem;
   font-size: 1rem;
