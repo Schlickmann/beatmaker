@@ -1,6 +1,6 @@
 
 <h1 align="center">Beatmaker</h1>
-<h2 align="center">Let's create some noise 🎵</h2>
+<h3 align="center">Let's create some noise 🎵</h3>
 
 
 <p align="center">
