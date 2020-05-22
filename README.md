@@ -1,7 +1,7 @@
-<p align="center">
-	<h1>Beatmaker</h1>
-	<h2>Let's create some noise 🎵</h2>
-</p>
+
+<h1 align="center">Beatmaker</h1>
+<h2 align="center">Let's create some noise 🎵</h2>
+
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Schlickmann/beatmaker?color=%2304D361">
